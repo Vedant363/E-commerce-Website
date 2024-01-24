@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Login Page</title>
+    <style>
+
+        body {
+            background-image: url('img/gradient.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        label{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        :placeholder-shown{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%; 
+        }
+
+        .arrow{
+            color: #000;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .arrow:hover{
+            color: #12ee19;
+            transition: 0.2s ease;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .logo img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+
+        .form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: flex;
+            margin-bottom: 5px;
+        }
+
+        #email {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #password {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .error-message {
+            color: red;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+
+        .rememberme {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+
+        .rememberme input {
+            margin-top: 6px;
+            margin-right: 7px;
+            margin-bottom: 10px;
+            margin-left: 4px;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+
+        .loginbutton {
+            background-color: #4caf50;
+            color: #000;
+            font-weight: 700;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .loginbutton:hover {
+            background-color: #12ee19;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+            transition: 0.3s ease;
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin-bottom: 15px;
+        }
+
+        .forgot-password .fpassword {
+            font-size: 12px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .forgot-password .fpassword:hover {
+            color: #4caf50;
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .social-icons .gmail {
+            padding-right: 30px;
+        }
+
+        .social-icons .gmail:hover {
+            color: red;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .social-icons .facebook:hover {
+            color: blue;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .sign-up {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .sign-up .signuplogo {
+            color: #000;
+            text-decoration: none;
+            text-shadow: #000;
+        }
+
+        .sign-up .signuplogo:hover {
+            text-decoration: underline;
+            color: #4caf50;
+        }
+
+        .copyright{
+            font-size: 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <div class="container">
+        <a class="arrow" href="index.html"><i class="fas fa-arrow-left"></i></a>
+        <div class="logo">
+            <img src="img/logo3.png" alt="Logo">
+        </div>
+
+        <div class="form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="" required>
+            <p id="email-error" class="error-message"></p>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="" required>
+
+            <div class="rememberme">
+                <input type="checkbox" name="remember-me" id="rem">
+                <label for="rem">Remember me</label>
+            </div>
+
+            <div class="button">
+                <button class="loginbutton" onclick="validateForm()">Login</button>
+            </div>
+
+            <p class="forgot-password">
+                <a class="fpassword" href="#">Forgot Password?</a>
+            </p>
+
+            <div class="social-icons">
+                <i class="fab fa-google gmail"></i>
+                <i class="fab fa-facebook facebook"></i>
+            </div>
+
+            <p class="sign-up">
+                Need an account? <a class="signuplogo" href="signup.html">SIGN UP</a>
+            </p>
+
+            <p class="copyright">
+                &copy;2024-25 UrbanWear&trade;
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var email = document.getElementById('email').value;
+            var emailError = document.getElementById('email-error');
+
+            // Simple email validation
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                emailError.textContent = 'Invalid email address';
+                return;
+            } else {
+                emailError.textContent = '';
+            }
+
+        }
+    </script>
+</body>
+
+</html>
