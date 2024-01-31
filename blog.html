@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <section id="header">
+    <a href="#"><img src="img/urbaniclogo.jpg" class="logo" alt="logo"></a>
+
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a class="active" href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="dropdown" onclick="toggleDropdown()">
+          <li><a href="#">Login</a></li>
+          <div class="dropdown-content">
+            <a href="signin.html" class="sbutton blue-button">Sign&nbsp;In</a>
+            <a href="signup.html" class="sbutton red-button">Sign&nbsp;Up</a>
+          </div>
+        </div>
+        <li><a id="lg-bag" href="cart.html"><i class="bi bi-bag"></i></a></li>
+        <a href="#" id="close"><i class="fas fa-times close-icon"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href="cart.html"><i class="bi bi-bag"></i></a>
+      <i id="bar" class="fas fa-bars hamburger-icon"></i>
+    </div>
+  </section>
+
+  <section id="page-header" class="blog-header">
+
+    <h2>#readmore</h2>
+
+    <p>Our case studies related to clothing!</p>
+
+  </section>
+
+
+  <section id="blog">
+    <div class="blog-box">
+      <div class="blog-img">
+        <img src="img/blog/b1.jpg" alt="">
+      </div>
+      <div class="blog-details">
+        <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
+        <p>Kickstarter main braid godard coloring book. Raclette waistcoat selfies yr wolf chartreuse hexagon irony,
+          godard...</p>
+        <a href="#">CONTINUE READING</a>
+      </div>
+      <h1>12/02/23</h1>
+    </div>
+    <div class="blog-box">
+      <div class="blog-img">
+        <img src="img/blog/b2.jpg" alt="">
+      </div>
+      <div class="blog-details">
+        <h4>The Classic Denim Jacket</h4>
+<p>Elevate your style with our timeless denim jacket. Crafted from premium denim fabric...</p>
+        <a href="#">CONTINUE READING</a>
+      </div>
+      <h1>28/04/23</h1>
+    </div>
+    <div class="blog-box">
+      <div class="blog-img">
+        <img src="img/blog/b3.jpg" alt="">
+      </div>
+      <div class="blog-details">
+        <h4>The Cozy Cashmere Sweater</h4>
+        <p>Wrap yourself in luxury with our ultra-soft cashmere sweater. Perfect for chilly evenings...</p>        
+        <a href="#">CONTINUE READING</a>
+      </div>
+      <h1>03/06/23</h1>
+    </div>
+    <div class="blog-box">
+      <div class="blog-img">
+        <img src="img/blog/b4.jpg" alt="">
+      </div>
+      <div class="blog-details">
+        <h4>The Tailored Wool Blazer</h4>
+        <p>Make a statement with our impeccably tailored wool blazer. Designed for both formal and casual occasions...</p>        
+        <a href="#">CONTINUE READING</a>
+      </div>
+      <h1>19/09/23</h1>
+    </div>
+    <div class="blog-box">
+      <div class="blog-img">
+        <img src="img/blog/b5.jpg" alt="">
+      </div>
+      <div class="blog-details">
+        <h4>The Versatile Leather Boots</h4>
+        <p>Step out in style with our versatile leather boots. Handcrafted from finest leather...</p>        
+        <a href="#">CONTINUE READING</a>
+      </div>
+      <h1>05/01/24</h1>
+    </div>
+  </section>
+
+  <section id="pagination" class="section-p1">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#"><i class="fas fa-arrow-right"></i>
+    </a>
+  </section>
+
+  <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Sign Up For Newsletters</h4>
+      <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Your email address">
+      <button class="normal">Sign Up</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="col">
+      <img class="footlogo" src="img/logo3.png" alt="">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> Sector-26, Pradhikaran, Nigdi,Pimpri-Chinchwad</p>
+      <p><strong>Phone:</strong> (+91) 02 3345 6423</p>
+      <p><strong>Hours:</strong> 10:00 a.m - 6:00 p.m, Mon - Sat</p>
+      <div class="follow">
+        <h4>Follow Us On: </h4>
+        <div class="icon">
+          <i class="fab fa-facebook social-icon"></i>
+          <i class="fab fa-twitter social-icon"></i>
+          <i class="fab fa-instagram social-icon"></i>
+          <i class="fab fa-youtube social-icon"></i>
+          <i class="fab fa-pinterest social-icon"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track My Order</a>
+      <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play Store</p>
+      <div class="row">
+        <img class="apple" src="img/pay/app.jpg" alt="">
+        <img class="google" src="img/pay/play.jpg" alt="">
+      </div>
+      <p>Secure Payment Gateways</p>
+      <img src="img/pay/pay.png" alt="">
+    </div>
+
+    <div class="copyright">
+      <p>&copy;2024-25 UrbanWear&trade;</p>
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
